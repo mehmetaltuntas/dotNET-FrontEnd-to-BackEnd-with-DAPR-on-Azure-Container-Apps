@@ -2,7 +2,7 @@ param location string = resourceGroup().location
 
 // create the azure container registry
 resource acr 'Microsoft.ContainerRegistry/registries@2021-09-01' = {
-  name: toLower('${resourceGroup().name}acr')
+  name: toLower('kronosacrcontainers')
   location: location
   sku: {
     name: 'Basic'
